@@ -1,0 +1,92 @@
+img{
+    width: 150px;
+    position: absolute;
+    left: calc(60%);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    div{
+        margin: 1rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        position: relative;
+        label{
+            position: absolute;
+            left: 0;
+        }
+        input{
+            width: 60%;
+        }
+    }
+    button{
+        margin: 1rem 0;
+        width: 100%;
+    }
+}
+
+.result{
+    flex-direction: column;
+}
+
+#modal{
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 100;
+    background: black;
+    opacity: 0.75;
+}
+
+
+#modal-content{
+    overflow-y: scroll;
+    top: 10vh;
+    left: 10vw;
+    width: 80vw;
+    max-height: 80vh;
+    padding: 1rem;
+    position: fixed;
+    z-index: 101;
+    background: white;
+    border: 2px solid black;
+    border-radius: 1rem;
+    span{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+svg.custom .node circle {
+	fill: #F3F3FF;
+	stroke: #2593B8;
+	stroke-width: 2px;
+}
+
+svg.custom .node text {
+	font-size: 11px;
+	background-color: #444;
+	fill: black;
+	text-shadow: 0 1px 4px teal;
+}
+
+svg.custom .node {
+	cursor: pointer;
+}
+
+svg.custom path.link {
+	fill: none;
+	stroke: #2593B8;
+	stroke-width: 1.5px;
+}
